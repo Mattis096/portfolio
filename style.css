@@ -108,6 +108,7 @@ h2 {
 .project-card img.project-image {
   width: 100%;          /* l'image prend toute la largeur du card */
   height: auto;         /* garde les proportions */
+  max-height: 500px;
   border-radius: 10px;  /* coins arrondis pour correspondre au card */
   object-fit: cover;    /* recadre l'image si besoin */
   margin-bottom: 10px;  /* espace entre l'image et le texte */
