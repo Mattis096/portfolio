@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Mon Portfolio</h1>
+  <button class="burger" aria-label="Menu">☰</button>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section id="about">
+  <h2>À propos</h2>
+  <p style="text-align:center; font-size:1.2rem; line-height:1.6; max-width:800px; margin:auto;">
+    bla bla bla
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Mes Projets</h2>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <h3>Site Web Portfolio</h3>
+      <p>Un site web responsive codé en HTML, CSS et JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Modèle 3D : Chimpanzé en costume</h3>
+      <p>Un personnage modélisé sous Blender pour un projet académique de création de jeu vidéo.</p>
+      <model-viewer src="models/SINGE.glb" alt="Singe"
+              camera-controls auto-rotate shadow-intensity="1"
+              autoplay disable-zoom>
+      </model-viewer>
+    </div>
+
+    <div class="project-card">
+      <h3>Application Mobile</h3>
+      <img src="images/projet/yams.png" alt="Prototype Application Mobile" class="project-image">
+      <p>Prototype d'une application mobile de tableau de Yams, design moderne et ergonomique.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Jeu Vidéo 2D</h3>
+      <img src="images/projet/alien.png" alt="Jeu Alien" class="project-image">
+      <p>Un petit jeu vidéo développé en Unity avec des graphismes pixel art.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Modèle 3D : Véhicule futuriste</h3>
+      <p>Un véhicule de science-fiction entièrement modélisé et texturé sous Blender.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Rio de Janeiro</h3>
+      <p>Un projet académique de jeu en ligne. (<a href="https://monkey-heist.github.io/Rio_de_Janeiro.github.io/" target="_blank" class="project-link">voir site</a>)</p>
+        <model-viewer src="models/STADE.glb" alt="Stade"
+                      camera-controls auto-rotate shadow-intensity="1"
+                      autoplay disable-zoom camera-orbit="0deg 65deg auto">
+        </model-viewer>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:rischard.mattis@gmail.com" target="_blank">
+      <img src="images/icone/email.png" alt="Email" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/mattis-rischard-067022347" target="_blank">
+      <img src="images/icone/linkdin.png" alt="LinkedIn" class="icon">
+    </a>
+    <a href="https://www.instagram.com/mattis_096?igsh=MTBjM3lwd2l0NWdxbg==" target="_blank">
+      <img src="images/icone/instagram.png" alt="Instagram" class="icon">
+    </a>
+    <a href="https://github.com/Mattis096" target="_blank">
+      <img src="images/icone/github.png" alt="GitHub" class="icon">
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Mon Portfolio - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
